@@ -28,4 +28,4 @@ const checkAnagram = (str1, str2) => {
   return true;
 };
 
-checkAnagram("cinema", "iceman");
+console.log(checkAnagram("cinema", "iceman"));
