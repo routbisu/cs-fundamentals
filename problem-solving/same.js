@@ -31,6 +31,7 @@ const same = (arr1, arr2) => {
       return false;
     }
   }
+  return true;
 };
 
 console.log(same([1, 2, 3], [4, 1, 9]));
