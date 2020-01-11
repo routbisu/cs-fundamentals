@@ -7,4 +7,8 @@ const sumRange = n => {
   return n + sumRange(n - 1);
 };
 
+// Using arrow function syntax
+const sumRangeArrow = n => (n === 1 ? 1 : n + sumRange(n - 1));
+
 console.log(sumRange(10));
+console.log(sumRangeArrow(4));
