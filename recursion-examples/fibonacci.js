@@ -1,6 +1,7 @@
 /**
  * Example of dynamic programming - storing the results of repititive computation
  * Return the nth number of fibonacci series using recursion
+ * Complexity - O(2 ^ n) because of repeated computations
  */
 const fibonacciRecursive = n => {
   if (n == 1 || n == 2) return 1;
@@ -9,7 +10,10 @@ const fibonacciRecursive = n => {
 
 console.log(fibonacciRecursive(6));
 
-// Fibonacci implementation using memoization
+/* Fibonacci implementation using memoization
+   Complexity - O(n)
+*/
+
 const memo = [];
 const fibonacciMemoize = n => {
   if (memo[n] !== undefined) return memo[n];
@@ -22,7 +26,9 @@ const fibonacciMemoize = n => {
 
 console.log(fibonacciRecursive(6));
 
-/* Fibanacii implementation using bottom up approach */
+/* Fibanacii implementation using bottom up approach
+  Complexity: O(n)
+*/
 const fibonacciBottomUp = n => {
   if (n === 1 || n === 2) return 1;
   let fib = [];
